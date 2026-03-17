@@ -14,3 +14,8 @@ O Ambiente será criado na pasta ".venv"
 
 "pip install Flask"
 "pip install flask-restful"
+
+###Para FastAPI
+
+pip install "fastapi[standard]"
+fastapi dev
