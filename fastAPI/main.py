@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+import importClassTest
+
 
 class Item(BaseModel):
     name: str
@@ -28,4 +30,8 @@ async def read_item(skip: int = 0, limit: int = 10):
 
 @app.post("/create-items/")
 async def create_item(item: Item):
+    return item
+
+@app.post("/create-import-test")
+async def create_import_test(item: importClassTest.importClass):
     return item
