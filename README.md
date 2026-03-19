@@ -19,3 +19,8 @@ O Ambiente será criado na pasta ".venv"
 
 pip install "fastapi[standard]"
 fastapi dev
+
+
+
+python -m pip install pymongo
+pip install python-dotenv   

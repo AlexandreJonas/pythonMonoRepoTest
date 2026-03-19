@@ -1,2 +1,3 @@
 /.venv
 /fastAPI/__pycache__
+.env
