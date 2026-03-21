@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from src.model import blogModel
+from src.config import parameters
 from typing import List
 from pydantic import TypeAdapter
 
@@ -7,7 +8,7 @@ class BlogProcedures():
     connection : None
 
     def __init__(self):
-        self.connection = MongoClient("mongodb://localhost")
+        self.connection = MongoClient(parameters.mongoDBConnection)
 
     def insertOne():
         pass
